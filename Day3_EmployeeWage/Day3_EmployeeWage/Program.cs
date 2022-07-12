@@ -5,7 +5,7 @@
 
         public static void Main(string[] args)
         {
-            UC4_UsingSwitchStatement CheckEmp = new UC4_UsingSwitchStatement();
+            UC5_EmpMonthlyWage CheckEmp = new UC5_EmpMonthlyWage();
             CheckEmp.CalucalteEmpWage();
         }
 
