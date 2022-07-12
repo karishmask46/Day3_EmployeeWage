@@ -5,8 +5,8 @@
 
         public static void Main(string[] args)
         {
-            UC2_DailyEmpWageFullTime CheckEmp = new UC2_DailyEmpWageFullTime();
-            CheckEmp.DailyEmpWage();
+            UC3_EmpWagePartTime CheckEmp = new UC3_EmpWagePartTime();
+            CheckEmp.EmpwagePartTime();
         }
 
 
