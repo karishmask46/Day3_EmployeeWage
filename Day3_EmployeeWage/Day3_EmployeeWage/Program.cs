@@ -5,8 +5,8 @@
 
         public static void Main(string[] args)
         {
-            UC3_EmpWagePartTime CheckEmp = new UC3_EmpWagePartTime();
-            CheckEmp.EmpwagePartTime();
+            UC4_UsingSwitchStatement CheckEmp = new UC4_UsingSwitchStatement();
+            CheckEmp.CalucalteEmpWage();
         }
 
 
