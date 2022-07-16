@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Day3_EmployeeWage
 {
-    class EmployeeWageComputation
+    class EmployeeWageComputation : InterFaceEmpWage
     {
         public const int IS_FULL_TIME = 1;
         public const int IS_PART_TIME = 2;
