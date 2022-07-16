@@ -12,7 +12,10 @@
             employeeComputation.AddCompany("MAHINDRA", 30, 8, 4, 100, 20);
             employeeComputation.CalculateEmpWage("MAHINDRA");
 
-            employeeComputation.displayArray();
+            //employeeComputation.displayArray(Name);
+            Console.WriteLine("Enter the name of the company you want to see the total wage of: ");
+            string Name = Console.ReadLine();
+            employeeComputation.displayArray(Name);
         }
     }
 }

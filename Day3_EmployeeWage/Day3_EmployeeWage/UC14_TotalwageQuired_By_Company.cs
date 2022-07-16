@@ -83,13 +83,17 @@ namespace Day3_EmployeeWage
             CompanyList.Add(monthlyWage);
 
         }
-        public void displayArray()
+        //public void displayArray()
+        //{
+        //    for (int i = 0; i < CompanyList.Count; i += 3)
+        //    {
+        //        Console.WriteLine("Monthly wage for {0} with \n Daily wage = {1} is {2}\n", CompanyList[i], CompanyList[i + 1], CompanyList[i + 2]);
+        //    }
+        //}
+        public void displayArray(string Name)
         {
-            for (int i = 0; i < CompanyList.Count; i += 3)
-            {
-                Console.WriteLine("Monthly wage for {0} with \n Daily wage = {1} is {2}\n", CompanyList[i], CompanyList[i + 1], CompanyList[i + 2]);
-            }
+            int Index = CompanyList.IndexOf(Name);
+            Console.WriteLine("\nMonthly wage for {0} with \n Daily wage = {1} is {2}\n", CompanyList[Index], CompanyList[Index + 1], CompanyList[Index + 2]);
         }
     }
 }
-
