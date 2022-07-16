@@ -5,7 +5,7 @@
 
         public static void Main(string[] args)
         {
-            UC6_EmpWageMaxWorkingHrs CheckEmp = new UC6_EmpWageMaxWorkingHrs();
+            UC7_RefactorTheCode CheckEmp = new UC7_RefactorTheCode();
             CheckEmp.CalucalteEmpWage();
         }
 
