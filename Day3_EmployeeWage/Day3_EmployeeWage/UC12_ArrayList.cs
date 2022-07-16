@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,26 +7,30 @@ using System.Threading.Tasks;
 
 namespace Day3_EmployeeWage
 {
-    class EmployeeWageComputation : InterFaceEmpWage
+    class EmployeeWageComputation : InterfaceEmpComputation
     {
         public const int IS_FULL_TIME = 1;
         public const int IS_PART_TIME = 2;
         private Dictionary<string, Company> CompaniesDict;
         //Declaring Array
-        public string[] CompanyList;
+        //public string[] CompanyList;
+        public ArrayList CompanyList;
         public int ArrayIndex = 0;
 
         public EmployeeWageComputation(int Number)
         {
             CompaniesDict = new Dictionary<string, Company>();
-            CompanyList = new string[2 * Number];
+            //CompanyList = new string[2 * Number];
+            CompanyList = new ArrayList();
         }
 
         public void AddCompany(string CompanyName, int EmpWagePerhour, int FullTime_WorkingHrs_PerDay, int PartTime_WorkingHours_PerDay, int MAX_WORKING_HRS, int MAX_WORKING_DAYS)
         {
             Company company = new Company(CompanyName.ToLower(), EmpWagePerhour, FullTime_WorkingHrs_PerDay, PartTime_WorkingHours_PerDay, MAX_WORKING_HRS, MAX_WORKING_DAYS);
             CompaniesDict.Add(CompanyName.ToLower(), company);
-            CompanyList[ArrayIndex] = CompanyName;
+            //CompanyList[ArrayIndex] = CompanyName;
+            CompanyList.Add(CompanyName);
+            //CompanyList.Add(EmpWagePerhour * FullTime_WorkingHrs_PerDay);
 
             ArrayIndex++;
         }
@@ -73,20 +78,17 @@ namespace Day3_EmployeeWage
                 monthlyWage += wagePerDay;
 
             }
-            CompanyList[ArrayIndex] = Convert.ToString(monthlyWage);
-            ArrayIndex++;
-
+            //CompanyList[ArrayIndex] = Convert.ToString(monthlyWage);
+            //ArrayIndex++;
+            CompanyList.Add(monthlyWage);
 
         }
         public void displayArray()
         {
-            for (int i = 0; i < CompanyList.Length; i += 2)
+            for (int i = 0; i < CompanyList.Count; i += 2)
             {
                 Console.WriteLine("Monthly wage for {0} is {1}", CompanyList[i], CompanyList[i + 1]);
             }
         }
-
     }
 }
-    
-
