@@ -5,7 +5,12 @@ VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day3_EmployeeWage", "Day3_EmployeeWage\Day3_EmployeeWage.csproj", "{C0B2FE85-871F-4721-8AD3-73CDAA71BD9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day3_LineComparision", "..\..\Day3_LineComparision\Day3_LineComparision\Day3_LineComparision\Day3_LineComparision.csproj", "{F36CF5C0-EC63-4833-BBEE-61BBAB3D1A01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day3_LineComparision", "..\..\Day3_LineComparision\Day3_LineComparision\Day3_LineComparision\Day3_LineComparision.csproj", "{F36CF5C0-EC63-4833-BBEE-61BBAB3D1A01}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F4B126BD-22CD-4AA6-97FB-6B7576EEB43E}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

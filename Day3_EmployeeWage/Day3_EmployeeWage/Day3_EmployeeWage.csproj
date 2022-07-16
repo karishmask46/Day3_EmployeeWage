@@ -8,7 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Company.cs" />
     <Compile Remove="UC1EmployeePresent.cs" />
+    <Compile Remove="UC2_DailyEmpWageFullTime.cs" />
+    <Compile Remove="UC3_EmpWagePartTime.cs" />
+    <Compile Remove="UC4_UsingSwitchStatement.cs" />
+    <Compile Remove="UC5_EmpMonthlyWage.cs" />
+    <Compile Remove="UC6_EmpWageMaxWorkingHrs.cs" />
+    <Compile Remove="UC7_RefactorTheCode.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
   </ItemGroup>
 
 </Project>
